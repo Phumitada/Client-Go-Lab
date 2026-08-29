@@ -6,9 +6,8 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
-	"l8s.io/client-go/tools/clientcmd"
+	"k8s.io/client-go/tools/clientcmd"
 )
-
 func main(){
 	config, err := clientcmd.BuildConfigFromFlags("",clientcmd.RecommendedHomeFile)
 	if err != nil {
