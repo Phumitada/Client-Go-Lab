@@ -1,0 +1,9 @@
+apiVersion: paas.ham.dev/v1
+kind: App
+metadata:
+  name: hotel-api-test
+  namespace: paas-dev
+spec:
+  image: nginx:latest
+  replicas: 1
+  port: 8080
